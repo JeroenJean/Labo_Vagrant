@@ -67,6 +67,9 @@ Verwijder nu de virtuele machine:
   ```
       config.vm.synced_folder ".", "/vagrant", disabled: false
   ```
+  
+  ❗Let op, bij VMWare lijkt het alsof dit niet gelukt is (df zal de mount niet laten zien) echter het is er wel. Probeer maar eens naar /vagrant te gaan.
+  
   Voer daarna volgende commando uit:
   ```
       vagrant reload
