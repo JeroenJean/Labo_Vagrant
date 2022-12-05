@@ -85,7 +85,7 @@ Verwijder nu de virtuele machine:
             touch /tmp/hello.txt
         SHELL
   ```
-  Ga na of de file wordt aangemaakt door de VM te verwijderen en terug aan te maken. Log in op de VM via vagrant ssh. Gebruik het commando "id" om na te gaan wat je indentiteit is. Dit zou "vagrant" moeten zijn. Ga ook na wie de eigenaar is van /tmp/hello.txt. Dit zou "root" moeten zijn. Hiermee kunnen we besluiten van de Vragrant de mogelijkheid heeft om root te worden op de VM en dus ook als root commando's kan uitvoeren.
+  Ga na of de file wordt aangemaakt door de VM te verwijderen en terug aan te maken. Log in op de VM via vagrant ssh. Gebruik het commando "id" om na te gaan wat je indentiteit is. Dit zou "vagrant" moeten zijn. Ga ook na wie de eigenaar is van /tmp/hello.txt. Dit zou "root" moeten zijn. Hiermee kunnen we besluiten dat Vragrant de mogelijkheid heeft om root te worden op de VM en dus ook als root commando's kan uitvoeren.
 - Wijzig de naam van de VM, naar je eigen naam.
 - Gebruik de SHELL provisioner op apache2 te installeren.
   ```
@@ -96,4 +96,4 @@ Verwijder nu de virtuele machine:
           service apache2 status
    SHELL
    ```
-- Forward tcp poort 8080 op je eigen computer naar poort 80 op de VM en ga na of deze portfoward werkt. Normaal zou je dan de standaard apache webpagina moeten zien.
+- Forward tcp poort 8384 op je eigen computer naar poort 80 op de VM en ga na of deze portfoward werkt. Normaal zou je dan de standaard apache webpagina moeten zien.
