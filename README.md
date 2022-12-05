@@ -51,10 +51,10 @@ Verwijder nu de virtuele machine:
 # Opdrachten
 
 - Default worden de door Vragant opgestarte machine's headless opgestart. Pas de Vagrantfile aan om de GUI (VirtualBox Display) te laten zien bij het opstarten. Voer volgend commando uit na het aanpassen van de Vagrantfile
-    ```
-        vagrant reload
-    
-    \item Pas het aantal voorziene geheugen van de virtuele machine aan naar 512MB. Voer volgend commando uit na het aanpassen van de Vagrantfile
+  ```
+      vagrant reload
+  ```
+- Pas het aantal voorziene geheugen van de virtuele machine aan naar 512MB. Voer volgend commando uit na het aanpassen van de Vagrantfile
     \begin{verbatim}
         vagrant reload
     \end{verbatim}
