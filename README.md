@@ -14,7 +14,7 @@ We gaan onze eerste virtuele omgevingen maken.
     mkdir debian11
     cd debian11
 ```
-Vanaf hier moeten we een duidelijk verschil maken tussen de provider die we gebruiken:
+Vanaf hier moeten we een duidelijk verschil maken tussen de provider (= Virtualistatie software) die we gebruiken:
 | **VirtualBox** | **VMWare** |
 | --- | --- |
 |<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>     vagrant init jj-ucll/debian11</code></pre> |
