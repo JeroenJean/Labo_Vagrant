@@ -18,7 +18,6 @@ Vanaf hier moeten we een duidelijk verschil maken tussen de provider (= Virtuali
 | **VirtualBox** | **VMWare** |
 | --- | --- |
 |<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>     vagrant init jj-ucll/debian11</code></pre> |
-|<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>config.vm.provider "vmware_workstation" do |vb|</code></pre> |
 
 Lees de automatisch aangemaakt Vagrantfile en zorg dat je alle configuratie instellingen begrijpt.
 
