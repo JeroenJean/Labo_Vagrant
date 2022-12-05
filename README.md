@@ -30,7 +30,7 @@ Start nu de virtuele omgeving en lees aandachtig welke logs er op het scherm ver
 ```
     vagrant up
 ```
-Gebruik SSH om in te loggen op de virtuele host. De default gebruiksnaam en wachtwoord is "vagrant" en "vagrant" of "root" en "vagrant" of .... Het is namelijk afhankelijk van het createi process.
+Gebruik SSH om in te loggen op de virtuele host. De default gebruiksnaam en wachtwoord is "vagrant" en "vagrant" of "root" en "vagrant" of .... Het is namelijk afhankelijk van het creatie process.
 ```
     vagrant ssh
 ```
@@ -68,7 +68,7 @@ Verwijder nu de virtuele machine:
       config.vm.synced_folder ".", "/vagrant", disabled: false
   ```
   
-  ❗Let op, bij VMWare lijkt het alsof dit niet gelukt is (df zal de mount niet laten zien) echter het is er wel. Probeer maar eens naar /vagrant te gaan.
+  ❗Let op, bij VMWare lijkt het alsof dit niet gelukt is (df zal de mount niet laten zien) echter het is er wel. Probeer maar eens naar /vagrant te gaan. It's not a bug, it's a FEATURE.
   
   Voer daarna volgende commando uit:
   ```
