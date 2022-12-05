@@ -89,11 +89,11 @@ Verwijder nu de virtuele machine:
 - Wijzig de naam van de VM, naar je eigen naam.
 - Gebruik de SHELL provisioner op apache2 te installeren.
   ```
-      config.vm.provision "shell", inline: <<-SHELL
-          apt update -y
-          apt upgrade -y
-          apt install apache2 -y
-          service apache2 status
+   config.vm.provision "shell", inline: <<-SHELL
+       apt update -y
+       apt upgrade -y
+       apt install apache2 -y
+       service apache2 status
    SHELL
    ```
 - Forward tcp poort 8384 op je eigen computer naar poort 80 op de VM en ga na of deze portfoward werkt. Normaal zou je dan de standaard apache webpagina moeten zien.
