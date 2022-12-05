@@ -21,29 +21,29 @@ Vanaf hier moeten we een duidelijk verschil maken tussen de provider die we gebr
 
 Lees de automatisch aangemaakt Vagrantfile en zorg dat je alle configuratie instellingen begrijpt.\\\\
 Start nu de virtuele omgeving en lees aandachtig welke logs er op het scherm verschijnen.
-\begin{verbatim}
+```
     vagrant up
-\end{verbatim}
+```
 Gebruik SSH om in te loggen op de virtuele host. De default gebruiksnaam en wachtwoord is "vagrant" en "vagrant" of "root" en "vagrant" of .... Het is namelijk afhankelijk van het createi process.
-\begin{verbatim}
+```
     vagrant ssh
-\end{verbatim}
+```
 Wordt root door het volgende commando:
-\begin{verbatim}
+```
     sudo su -
-\end{verbatim}
+```
 Zorg dat de host up to dat is en installeer HTOP
-\begin{verbatim}
+```
     apt-get update
     apt-get upgrade
     apt-get install htop
-\end{verbatim}
+```
 Ga uit de virtuele machine en stop deze.
-\begin{verbatim}
+```
     exit
     vagrant halt
-\end{verbatim}
+```
 Verwijder nu de virtuele machine:
-\begin{verbatim}
+
     vagrant destroy
-\end{verbatim}
+```
