@@ -17,9 +17,15 @@ We gaan onze eerste virtuele omgevingen maken.
 Vanaf hier moeten we een duidelijk verschil maken tussen de provider (= Virtualistatie software) die we gebruiken:
 | **VirtualBox** | **VMWare** |
 | --- | --- |
+|<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>config.vm.provider "vmware_workstation" do |vb|<\br>     vb.vmx["memsize"] = 2048<\br>     vb.vmx["numvcpus"] = "2"<\br>     vb.vmx["displayName"] = "CheckMK_Test"<\br>  end</code></pre> |
+
+Lees de automatisch aangemaakt Vagrantfile en zorg dat je alle configuratie instellingen begrijpt.
+
+Afhankelijk van welke provider je gebruikt, zal deze file een beetje anders zijn:
+| **VirtualBox** | **VMWare** |
+| --- | --- |
 |<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>     vagrant init jj-ucll/debian11</code></pre> |
 
-Lees de automatisch aangemaakt Vagrantfile en zorg dat je alle configuratie instellingen begrijpt.\\\\
 Start nu de virtuele omgeving en lees aandachtig welke logs er op het scherm verschijnen.
 ```
     vagrant up
@@ -49,11 +55,11 @@ Verwijder nu de virtuele machine:
 ```
 # Opdrachten
 
-- Default worden de door Vragant opgestarte machine's headless opgestart. Pas de Vagrantfile aan om de GUI (VirtualBox Display) te laten zien bij het opstarten. Voer volgend commando uit na het aanpassen van de Vagrantfile
+- Default worden de door Vragant opgestarte machine's headless opgestart. Pas de Vagrantfile aan om de GUI (VirtualBox Display of VMWare Display) te laten zien bij het opstarten. Voer volgend commando uit na het aanpassen van de Vagrantfile
   ```
       vagrant reload
   ```
-- Pas het aantal voorziene geheugen van de virtuele machine aan naar 512MB. Voer volgend commando uit na het aanpassen van de Vagrantfile
+- Pas het aantal voorziene geheugen van de virtuele machine aan naar 2048MB. Voer volgend commando uit na het aanpassen van de Vagrantfile
   ```
       vagrant reload
   ```
