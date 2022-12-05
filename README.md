@@ -44,7 +44,7 @@ Ga uit de virtuele machine en stop deze.
     vagrant halt
 ```
 Verwijder nu de virtuele machine:
-
+```
     vagrant destroy
 ```
 # Opdrachten
