@@ -47,7 +47,6 @@ Verwijder nu de virtuele machine:
 
     vagrant destroy
 ```
-
 # Opdrachten
 
 - Default worden de door Vragant opgestarte machine's headless opgestart. Pas de Vagrantfile aan om de GUI (VirtualBox Display) te laten zien bij het opstarten. Voer volgend commando uit na het aanpassen van de Vagrantfile
