@@ -17,14 +17,15 @@ We gaan onze eerste virtuele omgevingen maken.
 Vanaf hier moeten we een duidelijk verschil maken tussen de provider (= Virtualistatie software) die we gebruiken:
 | **VirtualBox** | **VMWare** |
 | --- | --- |
-|<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>config.vm.provider "vmware_workstation" do |vb|<br>     vb.vmx["memsize"] = 2048<br>     vb.vmx["numvcpus"] = "2"<br>     vb.vmx["displayName"] = "CheckMK_Test"<br>  end</code></pre> |
+|<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>     vagrant init jj-ucll/debian11</code></pre> |
+|<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>config.vm.provider "vmware_workstation" do |vb|</code></pre> |
 
 Lees de automatisch aangemaakt Vagrantfile en zorg dat je alle configuratie instellingen begrijpt.
 
 Afhankelijk van welke provider je gebruikt, zal deze file een beetje anders zijn:
 | **VirtualBox** | **VMWare** |
 | --- | --- |
-|<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>     vagrant init jj-ucll/debian11</code></pre> |
+|<pre><code>    vagrant init debian/bullseye64</code></pre> | <pre><code>config.vm.provider "vmware_workstation" do |vb|</code></pre> |
 
 Start nu de virtuele omgeving en lees aandachtig welke logs er op het scherm verschijnen.
 ```
